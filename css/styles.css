@@ -1,0 +1,325 @@
+:root {
+  --primary-font-family: "Roboto", sans-serif;
+  --secondary-font-family: "Raleway", sans-serif;
+  --accent-color: #2196f3;
+  --accent-color-modal-btn: #188ce8;
+  --primary-font-color: #757575;
+  --secondary-font-color: #212121;
+  --footer-contacts-color: rgba(255, 255, 255, 0.6);
+  --color-white: #ffffff;
+  --light-bg-col: #f5f4fa;
+  --dark-bg-col: #2f303a;
+  --card-item: 3;
+  --card-gap: 30px;
+}
+
+body {
+  font-family: var(--primary-font-family), "Verdana", sans-serif;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--primary-font-color);
+}
+
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.header-container {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px;
+  border-bottom: #ececec;
+}
+.link {
+  text-decoration: none;
+  color: inherit;
+}
+.list {
+  list-style: none;
+}
+.card-set {
+  display: flex;
+  margin-left: calc(var(--card-gap) * -1);
+  margin-top: calc(var(--card-gap) * -1);
+  flex-wrap: wrap;
+}
+.card-set-item {
+  margin-left: var(--card-gap);
+  margin-top: var(--card-gap);
+  flex-basis: calc(100% / var(--card-item) - var(--card-gap));
+}
+/* ==========START COMPONENTS========== */
+.logo {
+  margin-right: 93px;
+  font-family: var(--secondary-font-family);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  color: var(--accent-color);
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+}
+
+/* ==========END COMPONENTS========== */
+
+/* ==========START HEADER========== */
+
+.nav-list {
+  display: flex;
+  align-items: center;
+
+  color: var(--secondary-font-color);
+}
+.logo-dark {
+  color: var(--secondary-font-color);
+}
+.nav-list-link {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  font-weight: 500;
+  line-height: 1.15;
+  letter-spacing: 0.02em;
+}
+.nav-list-item,
+.filter-btn,
+.header-cont-item:not(:last-child) {
+  margin-right: 50px;
+}
+.nav-list-item,
+.header-cont-item {
+  display: flex;
+  align-items: center;
+}
+.header-cont-list {
+  display: flex;
+  margin-left: auto;
+}
+
+.nav-list-link:hover,
+.nav-list-link:focus,
+.active-page {
+  color: var(--accent-color);
+}
+/* ==========END HEADER========== */
+
+/* ==========START HERO========== */
+.hero {
+  padding-top: 200px;
+  padding-bottom: 200px;
+  background-color: var(--dark-bg-col);
+}
+.modal-btn {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px 32px;
+  min-width: 200px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: none;
+}
+.main-title {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+  max-width: 700px;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--color-white);
+}
+
+/* ==========END HERO========== */
+
+/* ==========START MAIN========== */
+.subtitle {
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--secondary-text-logo-theme);
+}
+.section-title {
+  margin-bottom: 50px;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  color: var(--secondary-font-color);
+}
+.advsntages-list {
+  --card-item: 4;
+}
+
+.advantages-subtitle {
+  font-size: 14px;
+  line-height: 1.15;
+  text-transform: uppercase;
+  color: var(--secondary-font-color);
+}
+.advantages {
+  padding-bottom: 47px;
+}
+.services {
+  padding-top: 47px;
+}
+
+.our-team {
+  background-color: var(--light-bg-col);
+}
+.team-list {
+  --card-item: 4;
+}
+.team-list-item {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+.team-name,
+.team-position {
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+}
+.team-name {
+  margin-bottom: 10px;
+  font-weight: 500;
+  color: var(--secondary-font-color);
+}
+.team-member {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: var(--color-white);
+}
+.filter-item-text {
+  padding: 20px 24px;
+  border: 1px solid #eeeeee;
+  background-color: var(--color-white);
+}
+.modal-btn {
+  font-family: inherit;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.87;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: var(--color-white);
+  background: var(--accent-color);
+}
+.filter-btn {
+  padding: 6px 22px;
+  margin-right: 8px;
+  border-radius: 4px;
+  border: none;
+  align-items: center;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+  background-color: var(--light-bg-col);
+  color: var(--secondary-font-color);
+}
+.modal-btn:hover,
+.modal-btn:focus {
+  background-color: var(--accent-color-modal-btn);
+}
+.filter-btn:hover,
+.filter-btn:focus,
+.active-btn {
+  color: var(--color-white);
+  background-color: var(--accent-color);
+}
+.products-subtitle {
+  margin-bottom: 4px;
+  color: var(--secondary-font-color);
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+.product-type {
+  font-size: 16px;
+  line-height: 2;
+}
+.filter-btn-list {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+/* ==========END MAIN========== */
+
+/* ==========START FOOTER========== */
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.logo-footer {
+  margin-bottom: 20px;
+}
+.logo-footer,
+.address-link {
+  display: block;
+}
+
+.logo-light {
+  color: var(--color-white);
+}
+.adress {
+  font-style: normal;
+}
+.address-link {
+  margin-bottom: 9px;
+  color: var(--footer-contacts-color);
+}
+
+.address-link[target="_blank"] {
+  color: var(--color-white);
+}
+.address-link:hover,
+.address-link:focus {
+  color: var(--accent-color);
+}
+
+.footer {
+  background-color: var(--dark-bg-col);
+}
+/* ==========END FOOTER========== */
