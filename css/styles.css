@@ -53,8 +53,6 @@ img {
 .header-container {
   display: flex;
   align-items: center;
-  border-bottom: 1px;
-  border-bottom: #ececec;
 }
 .link {
   text-decoration: none;
@@ -98,6 +96,9 @@ img {
 
 /* ==========START HEADER========== */
 
+.header {
+  border-bottom: 1px solid #ececec;
+}
 .nav-list {
   display: flex;
   align-items: center;
@@ -114,8 +115,7 @@ img {
   line-height: 1.15;
   letter-spacing: 0.02em;
 }
-.nav-list-item,
-.filter-btn,
+.nav-list-item:not(:last-child),
 .header-cont-item:not(:last-child) {
   margin-right: 50px;
 }
@@ -187,6 +187,7 @@ img {
 }
 
 .advantages-subtitle {
+  margin-bottom: 10px;
   font-size: 14px;
   line-height: 1.15;
   text-transform: uppercase;
@@ -246,7 +247,6 @@ img {
 }
 .filter-btn {
   padding: 6px 22px;
-  margin-right: 8px;
   border-radius: 4px;
   border: none;
   align-items: center;
@@ -259,6 +259,9 @@ img {
   background-color: var(--light-bg-col);
   color: var(--secondary-font-color);
 }
+.filter-btn-item:not(:last-child) {
+  margin-right: 8px;
+}
 .modal-btn:hover,
 .modal-btn:focus {
   background-color: var(--accent-color-modal-btn);
@@ -268,6 +271,8 @@ img {
 .active-btn {
   color: var(--color-white);
   background-color: var(--accent-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .products-subtitle {
   margin-bottom: 4px;
@@ -294,10 +299,10 @@ img {
 }
 .logo-footer {
   margin-bottom: 20px;
-}
-.logo-footer,
-.address-link {
   display: block;
+}
+.address-item:not(:last-child) {
+  margin-bottom: 9px;
 }
 
 .logo-light {
@@ -307,7 +312,6 @@ img {
   font-style: normal;
 }
 .address-link {
-  margin-bottom: 9px;
   color: var(--footer-contacts-color);
 }
 
